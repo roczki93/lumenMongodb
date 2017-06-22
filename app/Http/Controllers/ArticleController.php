@@ -23,7 +23,7 @@ class ArticleController extends Controller
         $article  = Article::find($id);
   
         return response()->json($article);
-    }article
+    }
     public function createArticle(Request $request){
 	$article = Article::create($request->all());
 	
