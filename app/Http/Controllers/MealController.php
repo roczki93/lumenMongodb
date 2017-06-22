@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 //use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Meal;
-use Jenssegers\Mongodb\Http\Request;
+//use Jenssegers\Mongodb\Http\Request;
 
 
 class MealController extends Controller
