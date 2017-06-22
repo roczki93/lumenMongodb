@@ -14,8 +14,12 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
-$app->get('article','ArticleController@index');
-$app->post('article','ArticleController@createArticle');
+$app->get('api/v1/article','ArticleController@index');
+$app->get('api/v1/article/{id}','ArticleController@getArticle');
+$app->post('api/v1/article','ArticleController@createArticle');
+$app->put('api/v1/article','ArticleController@updateArticle');
+$app->delete('api/v1/article','ArticleController@deleteArticle');
+
 
 
 $app->get('tutaj','MealController@index');
